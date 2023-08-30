@@ -1,6 +1,5 @@
 // Imports;
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -8,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import * as SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
+
 // Files;
 import { HomeScreen, LoginScreen, RegisterScreen } from "./screens/Index";
 

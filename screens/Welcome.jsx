@@ -1,11 +1,10 @@
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, StyleSheet, Image } from "react-native";
 
 // File Imports;
 import { BoldText, MediumText } from "../components/text/Index";
 import { Container } from "../components/container/Index";
-
-// /Expo Imports;
 import { PrimaryButton, SecondaryButton } from "../components/button/Index";
+
 const Welcome = () => {
   return (
     <Container>
