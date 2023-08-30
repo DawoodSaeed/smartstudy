@@ -1,8 +1,8 @@
 import { View, Text, StyleSheet } from "react-native";
 import React from "react";
 
-const BoldText = ({ children }) => {
-  return <Text style={styles.textStyle}>{children}</Text>;
+const BoldText = ({ children, style }) => {
+  return <Text style={[styles.textStyle, style]}>{children}</Text>;
 };
 
 const styles = StyleSheet.create({

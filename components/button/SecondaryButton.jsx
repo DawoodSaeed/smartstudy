@@ -12,16 +12,17 @@ const PrimaryButton = ({ children, style }) => {
 
 const styles = StyleSheet.create({
   btnPrimary: {
-    backgroundColor: COLORS.black,
+    backgroundColor: COLORS.yellow,
     height: 48,
     width: 160,
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 8,
+    borderWidth: 2,
+    borderColor: COLORS.black,
   },
 
   btnText: {
-    color: "white",
     textTransform: "uppercase",
     fontFamily: "OpenSans-Bold",
     fontSize: 18,
