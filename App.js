@@ -1,5 +1,4 @@
 // Imports;
-import { StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -13,7 +12,7 @@ import { HomeScreen, LoginScreen, RegisterScreen } from "./screens/Index";
 
 // Splash Setting;
 SplashScreen.preventAutoHideAsync();
-setTimeout(SplashScreen.hideAsync, 5000);
+setTimeout(SplashScreen.hideAsync, 300);
 
 const Stack = createNativeStackNavigator();
 export default function App() {
@@ -56,12 +55,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});

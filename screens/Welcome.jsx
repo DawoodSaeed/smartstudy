@@ -5,7 +5,7 @@ import { BoldText, MediumText } from "../components/text/Index";
 import { Container } from "../components/container/Index";
 import { PrimaryButton, SecondaryButton } from "../components/button/Index";
 
-const Welcome = () => {
+const Welcome = ({ navigation }) => {
   return (
     <Container>
       <Image
@@ -23,8 +23,21 @@ const Welcome = () => {
         </MediumText>
 
         <View style={styles.btnContainer}>
-          <SecondaryButton style={{ marginRight: 10 }}>LOGIN</SecondaryButton>
-          <PrimaryButton>SIGNUP</PrimaryButton>
+          <SecondaryButton
+            style={{ marginRight: 10 }}
+            onPress={() => {
+              navigation.navigate("Login");
+            }}
+          >
+            LOGIN
+          </SecondaryButton>
+          <PrimaryButton
+            onPress={() => {
+              navigation.navigate("Register");
+            }}
+          >
+            SIGNUP
+          </PrimaryButton>
         </View>
       </View>
     </Container>

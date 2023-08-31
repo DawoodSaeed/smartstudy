@@ -11,10 +11,10 @@ const container = ({ children }) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.yellow,
+    backgroundColor: COLORS.white,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: 15,
+    paddingHorizontal: 10,
   },
 });
 export default container;
