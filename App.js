@@ -8,7 +8,12 @@ import { useFonts } from "expo-font";
 import AppLoading from "expo-app-loading";
 
 // Files;
-import { HomeScreen, LoginScreen, RegisterScreen } from "./screens/Index";
+import {
+  Dashboard,
+  HomeScreen,
+  LoginScreen,
+  RegisterScreen,
+} from "./screens/Index";
 
 // Splash Setting;
 SplashScreen.preventAutoHideAsync();
@@ -29,6 +34,11 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          name="Dashboard"
+          component={Dashboard}
+          options={{ headerShown: false }}
+        />
         {/* Kinda Splash Screen */}
         <Stack.Screen
           name="Home"

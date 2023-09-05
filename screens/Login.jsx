@@ -3,10 +3,9 @@ import { Image, Pressable, StyleSheet, View } from "react-native";
 
 // File Imports;
 import { Container } from "../components/container/Index";
-import BoldText from "../components/text/BoldText";
-import MediumText from "../components/text/MediumText";
+import { BoldText, MediumText } from "../components/text/Index";
+import { PrimaryButton } from "../components/button/Index";
 import CustomTextInput from "../components/textinput/CustomTextInput";
-import PrimaryButton from "../components/button/PrimaryButton";
 
 // Expo Imports;
 const Login = () => {

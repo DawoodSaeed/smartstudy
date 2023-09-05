@@ -1,3 +1,3 @@
 import Container from "./Container";
-
-export { Container };
+import PaddingContainer from "./PaddingContainer";
+export { Container, PaddingContainer };

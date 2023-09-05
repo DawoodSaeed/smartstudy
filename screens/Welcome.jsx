@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
   btnContainer: {
     marginTop: 64,
     flexDirection: "row",
+    justifyContent: "space-between",
   },
 });
 
